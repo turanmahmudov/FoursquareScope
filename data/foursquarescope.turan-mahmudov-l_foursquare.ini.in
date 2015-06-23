@@ -1,0 +1,15 @@
+[ScopeConfig]
+_DisplayName=Foursquare Scope
+_Description=Best places around you
+Art=screenshot.png
+Author=Turan Mahmudov
+Icon=icon.png
+Keywords = poi
+
+LocationDataNeeded=true
+
+[Appearance]
+PageHeader.Logo=logo.png
+ForegroundColor=#0732a2
+PageHeader.DividerColor=#0732a2
+

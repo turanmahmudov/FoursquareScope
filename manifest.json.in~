@@ -1,0 +1,17 @@
+{
+    "architecture": "@CLICK_ARCH@",
+    "description": "Best places around you",
+    "framework": "ubuntu-sdk-15.04",
+    "hooks": {
+        "foursquare": {
+            "apparmor": "foursquare.apparmor",
+            "scope": "foursquare",
+            "account-application": "gmail.application",
+            "account-service": "gmail.service"
+        }
+    },
+    "maintainer": "Turan Mahmudov <turan.mahmudov@gmail.com>",
+    "name": "foursquarescope.turan-mahmudov-l",
+    "title": "Foursquare",
+    "version": "0.1"
+}

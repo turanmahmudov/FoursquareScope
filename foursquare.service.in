@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service id="foursquarescope.turan-mahmudov-l">
+  <type>sharing</type>
+  <icon>foursquare</icon>
+  <name>Foursquare</name>
+  <provider>foursquare</provider>
+  <template>
+    <group name="auth">
+      <setting name="method">oauth2</setting>
+      <setting name="mechanism">web_server</setting>
+      <group name="oauth2">
+        <group name="web_server">
+          <setting name="Host">foursquare.com</setting>
+          <setting name="AuthPath">oauth2/authenticate</setting>
+          <setting name="TokenPath">oauth2/access_token</setting>
+          <setting name="RedirectUri">https://api.github.com/zen</setting>
+          <setting name="ResponseType">code</setting>
+          <setting type="as" name="Scope">['https://www.googleapis.com/auth/youtube.readonly']</setting>
+          <setting name="ClientId">N2PTS3LRPQXFXJRLVPQ45AWORSELMYHVP2W1CKMD3A0M1KRP</setting>
+          <setting name="ClientSecret">D1YM2VTUGRMTWKUBVWGNP0ACM05OGWRIFIXYBUYQM5O0QVHF</setting>
+          <setting type="as" name="AllowedSchemes">['https','http']</setting>
+        </group>
+      </group>
+    </group>
+  </template>
+</service>
+

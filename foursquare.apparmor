@@ -1,0 +1,9 @@
+{
+    "template": "ubuntu-scope-network",
+    "policy_groups": [
+        "accounts",
+        "location",
+        "networking"
+    ],
+    "policy_version": 1.3
+}
