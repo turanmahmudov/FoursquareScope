@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.1.1, 2015-06-23T20:19:06. -->
+<!-- Written by QtCreator 3.1.1, 2015-06-24T21:46:38. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -223,7 +223,7 @@
   <valuemap type="QVariantMap">
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">UbuntuSDK for armhf (GCC ubuntu-sdk-14.10-utopic)</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">UbuntuSDK for armhf (GCC ubuntu-sdk-14.10-utopic)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{e677f818-646f-40b4-b04d-86b512705ce4}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{490f1ff6-cf9b-4224-bace-7072a7f7f912}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">1</value>
@@ -233,7 +233,9 @@
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.AdditionalArguments"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets"/>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
       <value type="bool" key="CMakeProjectManager.MakeStep.Clean">false</value>
       <value type="bool" key="CMakeProjectManager.MakeStep.UseNinja">false</value>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -285,8 +287,8 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">UbuntuProjectManager.UploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">/home/turan/Apps/build-FoursquareScope-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_14_10_utopic-Default/foursquarescope.turan-mahmudov-l_0.1_armhf.click</value>
        <value type="QString">/usr/share/qtcreator/ubuntu/scripts/qtc_device_applaunch.py</value>
+       <value type="QString">/home/turan/Apps/build-FoursquareScope-UbuntuSDK_for_armhf_GCC_ubuntu_sdk_14_10_utopic-Default/foursquarescope.turan-mahmudov-l_0.1_armhf.click</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">127.0.0.1</value>
@@ -301,8 +303,8 @@
        <value type="QString">/var/lib/schroot/chroots/click-ubuntu-sdk-14.10-armhf</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2015-06-23T20:14:04</value>
-       <value type="QDateTime">2015-06-23T20:14:04</value>
+       <value type="QDateTime">2015-06-24T13:56:44</value>
+       <value type="QDateTime">2015-06-24T13:56:44</value>
       </valuelist>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>

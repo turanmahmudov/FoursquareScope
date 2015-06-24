@@ -33,7 +33,7 @@ using namespace scope;
  * next to the image.
  */
 
-const static string TRACKS_TEMPLATE =
+const static string VENUES_TEMPLATE =
     R"(
         {
             "schema-version": 1,
@@ -87,6 +87,7 @@ void Query::run(sc::SearchReplyProxy const& reply) {
 
         // A string to store the location name for the openweathermap query
         std::string ll;
+        std::string lol;
 
         // Access search metadata
         auto metadata = search_metadata();
@@ -99,15 +100,37 @@ void Query::run(sc::SearchReplyProxy const& reply) {
             if(location.latitude() && location.longitude()) {
 
                 // Create the "city country" string
+                //auto lat = location.latitude();
+                //auto lng = location.longitude();
+
+                //ll = location.country_name();
+                //ll = std::to_string(lat) + "," + std::to_string(lng);
+
+                // Must be edit
                 auto lat = location.latitude();
                 auto lng = location.longitude();
-                ll = location.country_name();
+
+                // Buffers for future strings
+                char buflat[7];
+                char buflng[7];
+
+                // Keep two decimal points
+                sprintf(buflat, "%.2f", lat);
+                sprintf(buflng, "%.2f", lng);
+
+                // Convert to std::string
+                std::string latstr(buflat);
+                std::string lngstr(buflng);
+
+                string rlatstr = latstr.replace(2, 1, ".");
+                string rlngstr = lngstr.replace(2, 1, ".");
+                ll = rlatstr + "," + rlngstr;
             }
         }
 
         // Fallback to a hardcoded location
         if(ll.empty()) {
-            ll = "Baku, AZ";
+            ll = "40.37,49.84";
         }
 
         // Trim the query string of whitespace
@@ -125,7 +148,7 @@ void Query::run(sc::SearchReplyProxy const& reply) {
 
         // Register a category for tracks
         auto tracks_cat = reply->register_category("tracks", "", "",
-            sc::CategoryRenderer(TRACKS_TEMPLATE));
+            sc::CategoryRenderer(VENUES_TEMPLATE));
         // register_category(arbitrary category id, header title, header icon, template)
         // In this case, since this is the only category used by our scope,
         // it doesn’t need to display a header title, we leave it as a blank string.

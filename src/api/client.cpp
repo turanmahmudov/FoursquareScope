@@ -65,7 +65,7 @@ Client::TrackRes Client::tracks(const string& query, const string& ll) {
     // The fist parameter forms the path part of the URI.
     // The second parameter forms the CGI parameters.
 
-    get( { "v2", "venues", "explore" }, { { "near", ll }, { "query", query }, { "section", "topPicks" }, { "venuePhotos", "1" }, { "radius", "800" }, { "oauth_token", "BPFNADBLKIOPI3YQOILBRNF3DMZ1315PBMZS2XNETXUWU0SY" }, { "v", "20140926" }, { "limit", "10" } }, root);
+    get( { "v2", "venues", "explore" }, { { "ll", ll }, { "query", query }, { "section", "topPicks" }, { "venuePhotos", "1" }, { "radius", "800" }, { "oauth_token", "BPFNADBLKIOPI3YQOILBRNF3DMZ1315PBMZS2XNETXUWU0SY" }, { "v", "20140926" }, { "limit", "10" } }, root);
 
     // My “list of tracks” object (as seen in the corresponding header file)
     TrackRes result;
