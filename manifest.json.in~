@@ -5,7 +5,9 @@
     "hooks": {
         "foursquare": {
             "apparmor": "foursquare.apparmor",
-            "scope": "foursquare"
+            "scope": "foursquare",
+            "account-application": "foursquare.application",
+            "account-service": "foursquare.service"
         }
     },
     "maintainer": "Turan Mahmudov <turan.mahmudov@gmail.com>",

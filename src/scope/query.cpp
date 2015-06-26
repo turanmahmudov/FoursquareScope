@@ -12,8 +12,6 @@
 
 #include <unity/scopes/Location.h>
 
-#include <unity/scopes/OnlineAccountClient.h>
-
 #include <iomanip>
 #include <sstream>
 
@@ -180,18 +178,6 @@ void Query::run(sc::SearchReplyProxy const& reply) {
         }
 
     } catch (domain_error &e) {
-        sc::OnlineAccountClient oa_client("foursquarescope.turan-mahmudov-l", "sharing", "foursquare");
-        auto cat = reply->register_category("foursquare_login", "", "",
-                                            sc::CategoryRenderer(LOGIN_TEMPLATE));
-        sc::CategorisedResult res(cat);
-        res.set_title(_("Log in with Foursquare"));
-        res.set_art("file:///usr/share/icons/suru/apps/scalable/address-book-app-symbolic.svg");
-
-        oa_client.register_account_login_item(res, query(),
-                                              sc::OnlineAccountClient::InvalidateResults,
-                                              sc::OnlineAccountClient::DoNothing);
-        reply->push(res);
-
         // Handle exceptions being thrown by the client API
         cerr << e.what() << endl;
         reply->error(current_exception());

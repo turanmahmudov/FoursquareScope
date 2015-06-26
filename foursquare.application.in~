@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application id="foursquarescope.turan-mahmudov-l">
   <description>Foursquare</description>
-  <desktop-entry>foursquarescope.turan-mahmudov-l.desktop</desktop-entry>
   <services>
     <service id="foursquarescope.turan-mahmudov-l">
       <description>Best places around you</description>

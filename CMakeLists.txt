@@ -74,13 +74,9 @@ execute_process(
 )
 
 configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
-configure_file(foursquare.service.in ${CMAKE_CURRENT_BINARY_DIR}/foursquare.service)
-configure_file(foursquare.application.in ${CMAKE_CURRENT_BINARY_DIR}/foursquare.application)
 
 # Install the click manifest
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION "/")
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/foursquare.application DESTINATION "/")
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/foursquare.service DESTINATION "/")
 install(FILES "foursquare.apparmor" DESTINATION "/")
 
 # Make these files show up in QtCreator
